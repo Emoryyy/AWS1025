@@ -1,0 +1,106 @@
+.bg-slate-blue-lighten {
+  background-color: #6f7fe7;
+}
+
+.bg-light-sky-blue-lighten {
+  background-color: #e7f5ff;
+}
+
+.bg-sky-blue-lighen-2 {
+  background-color: #e7fafe;
+}
+
+.bg-light-purple {
+  background-color: #eee3ff;
+}
+
+.bg-light-pink {
+  background-color: #fbe8fe;
+}
+
+.bg-yellow-panel {
+  background-color: #f3d354;
+}
+
+.max-lines-3 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.nav-pills.tai-yue-nav-pills .nav-link.active {
+  color: white !important;
+}
+
+.nav-pills.tai-yue-nav-pills .nav-link:has(.tai-yue-pill-icon) {
+  position: relative;
+  padding-right: 5rem;
+}
+.nav-pills.tai-yue-nav-pills .nav-link:has(.tai-yue-pill-icon) .tai-yue-pill-icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  padding: 0 0.6rem;
+  background: inherit;
+  border-radius: inherit;
+  border-top-left-radius: 35%;
+  border-bottom-left-radius: 35%;
+}
+.nav-pills.tai-yue-nav-pills .nav-link:has(.tai-yue-pill-icon) .tai-yue-pill-icon [class^=fa-] {
+  z-index: 1;
+}
+.nav-pills.tai-yue-nav-pills .nav-link:has(.tai-yue-pill-icon) .tai-yue-pill-icon::before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: inherit;
+  border: inherit;
+  border-radius: inherit;
+  filter: saturate(0.9) brightness(0.9);
+}
+
+.carousel.slide.tai-yue-carousel .carousel-indicators button:not(.carousel-control-prev, .carousel-control-next) {
+  border: 0.3rem solid #adb5bd;
+  background: #adb5bd;
+  border-radius: 50%;
+  width: 1px;
+  height: 1px;
+  opacity: 0.25;
+}
+.carousel.slide.tai-yue-carousel .carousel-indicators button:not(.carousel-control-prev, .carousel-control-next).active {
+  opacity: 1;
+}
+.carousel.slide.tai-yue-carousel .carousel-indicators .carousel-control-prev,
+.carousel.slide.tai-yue-carousel .carousel-indicators .carousel-control-next {
+  position: initial;
+  background: transparent;
+}
+.carousel.slide.tai-yue-carousel .carousel-indicators .carousel-control-prev [class*=carousel-control-],
+.carousel.slide.tai-yue-carousel .carousel-indicators .carousel-control-next [class*=carousel-control-] {
+  filter: brightness(0.5);
+  background-size: contain;
+  background-position: center;
+  width: 1rem;
+  height: 1rem;
+}
+
+.carousel.slide.tai-yue-carousel.tai-yue-carousel-dark .carousel-indicators button:not(.carousel-control-prev, .carousel-control-next) {
+  border-color: white;
+  background: white;
+  opacity: 1;
+}
+.carousel.slide.tai-yue-carousel.tai-yue-carousel-dark .carousel-indicators button:not(.carousel-control-prev, .carousel-control-next).active {
+  border-color: black;
+  background: black;
+}
+.carousel.slide.tai-yue-carousel.tai-yue-carousel-dark .carousel-indicators .carousel-control-prev [class*=carousel-control-],
+.carousel.slide.tai-yue-carousel.tai-yue-carousel-dark .carousel-indicators .carousel-control-next [class*=carousel-control-] {
+  filter: brightness(0);
+}/*# sourceMappingURL=style.css.map */
