@@ -1,29 +1,82 @@
-a{
-  text-decoration: none;
+.tai-yue-icon {
+  display: inline-block;
+  width: auto;
+  height: 16px;
+  line-height: 1;
+  box-sizing: border-box;
+  vertical-align: middle;
+  margin-bottom: 0.2rem;
+}
+
+.text-slate-blue {
+  color: #5fb8f4 !important;
 }
 
 .bg-slate-blue-lighten {
-  background-color: #6f7fe7;
+  background-color: #6f7fe7 !important;
+  border-color: #6f7fe7 !important;
+}
+
+.bg-slate-blue-darken {
+  background-color: #5568e2 !important;
+  border-color: #5568e2 !important;
+}
+
+.text-light-sky-blue {
+  color: #28c9e9;
 }
 
 .bg-light-sky-blue-lighten {
-  background-color: #e7f5ff;
+  background-color: #e7f5ff !important;
+  border-color: #e7f5ff !important;
 }
 
-.bg-sky-blue-lighen-2 {
-  background-color: #e7fafe;
+.bg-light-sky-blue-darken {
+  background-color: #d3ebfc !important;
+  border-color: #d3ebfc !important;
+}
+
+.bg-sky-blue-2-lighen {
+  background-color: #e7fafe !important;
+  border-color: #e7fafe !important;
+}
+
+.bg-sky-blue-2-darken {
+  background-color: #d2f5fc !important;
+  border-color: #d2f5fc !important;
+}
+
+.text-light-purple {
+  color: #ab83f5 !important;
 }
 
 .bg-light-purple {
-  background-color: #eee3ff;
+  background-color: #eee3ff !important;
+  border-color: #eee3ff !important;
+}
+
+.bg-light-purple-darken {
+  background-color: #e1d2fc !important;
+  border-color: #e1d2fc !important;
+}
+
+.text-light-pink {
+  color: #d16de4 !important;
 }
 
 .bg-light-pink {
-  background-color: #fbe8fe;
+  background-color: #fbe8fe !important;
+  border-color: #fbe8fe !important;
+}
+
+.bg-light-pink-darken {
+  background-color: #f9d8fe !important;
+  border-color: #f9d8fe !important;
 }
 
 .bg-yellow-panel {
-  background-color: #f3d354;
+  background-color: #f3d354 !important;
+  border-color: #f3d354 !important;
 }
 
 .max-lines-3 {
@@ -35,7 +88,24 @@ a{
 }
 
 .nav-pills.tai-yue-nav-pills .nav-link.active {
-  color: white !important;
+  box-shadow: var(--bs-box-shadow-sm);
+}
+
+.nav-pills.tai-yue-nav-pills .nav-link.active::before {
+  --size: 0.7rem;
+  content: "";
+  position: absolute;
+  left: calc(50% - var(--size));
+  bottom: calc(var(--size) * -1 + 1px);
+  width: 0;
+  height: 0;
+  display: block;
+  border-top: var(--size) solid;
+  border-top-color: inherit;
+  border-left: var(--size) solid transparent;
+  border-right: var(--size) solid transparent;
+  border-bottom: none;
+  z-index: 1;
 }
 
 .nav-pills.tai-yue-nav-pills .nav-link:has(.tai-yue-pill-icon) {
@@ -48,12 +118,12 @@ a{
   top: 0;
   height: 100%;
   padding: 0 0.6rem;
-  background: inherit;
   border-radius: inherit;
   border-top-left-radius: 35%;
   border-bottom-left-radius: 35%;
 }
-.nav-pills.tai-yue-nav-pills .nav-link:has(.tai-yue-pill-icon) .tai-yue-pill-icon [class^=fa-] {
+.nav-pills.tai-yue-nav-pills .nav-link:has(.tai-yue-pill-icon) .tai-yue-pill-icon .tai-yue-icon {
+  height: 1.2rem;
   z-index: 1;
 }
 .nav-pills.tai-yue-nav-pills .nav-link:has(.tai-yue-pill-icon) .tai-yue-pill-icon::before {
@@ -67,7 +137,6 @@ a{
   background-color: inherit;
   border: inherit;
   border-radius: inherit;
-  filter: saturate(0.9) brightness(0.9);
 }
 
 .carousel.slide.tai-yue-carousel .carousel-indicators button:not(.carousel-control-prev, .carousel-control-next) {
